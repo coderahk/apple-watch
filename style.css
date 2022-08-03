@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: sans-serif;
 }
-* {
+html {
     box-sizing: border-box;
 }
 img {
@@ -139,8 +139,8 @@ img {
     align-items: center;
     margin: 30px 0;
 }
-.bandbox .leftbox {
-    width: 65%;
+.ls  {
+    width: 60%;
 }
 .bottombox {
     padding: 250px 0;
@@ -149,8 +149,8 @@ img {
     background-size: cover;
     background-position: center;
 }
-.bottombox .leftbox {
-    width: 40%;
+.lt{
+    width: 45%;
     color: white;
     margin-left: auto;
 }
@@ -233,19 +233,20 @@ img {
         flex-direction: column-reverse;
         text-align: center;
     }
-    .bandbox .leftbox {
+    .ls {
+        width: 90%;
         margin-top: 40px;
     }
-    .bandbox .leftbox .left-title {
+    ..ls .left-title {
         font-size: 40px;
     }
-    .lt {
-        border: none;
-        padding: 0;
-    }
-    .bottombox .leftbox {
+    ..lt {
         margin: auto;
         width: 70%;
+    }
+    .ls .writing {
+        border: none;
+        padding: 0;
     }
 }
 @media(max-width:1050px) {
@@ -278,7 +279,7 @@ img {
     .leftbox {
         width: 100%;
     }
-    .bandbox .leftbox {
+    .ls {
         width: 100%;
     }
 }
@@ -289,8 +290,22 @@ img {
     .box-writing {
         font-size: 20px;
     }
-    .bottombox .leftbox {
+    .lt {
         width: 100%;
+    }
+    .bottombox {
+        padding: 0;
+        background-image: none;
+        border-top: 10px solid red;
+    }
+    .lt .left-title {
+        color: black;
+    }
+    .lt .writing {
+        color: black;
+    }
+    .boxh {
+        width: 640px;
     }
 }
 @media(max-width:460px){
@@ -308,12 +323,20 @@ img {
         width: 100%;
     }
     .left-title {
-        font-size: 30px;
+        font-size: 40px;
     }
     .img-watch {
         margin-top: 50px;
     }
     .phone {
         font-size: 30px;
+    }
+    .boxh {
+        width: 420px;
+    }
+}
+@media (max-width:370px) {
+    .boxh {
+        width: 350px;
     }
 }
