@@ -23,6 +23,7 @@ img {
 }
 .ul {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -306,9 +307,6 @@ img {
     .lt .writing {
         color: black;
     }
-    .boxh {
-        width: 620px;
-    }
 }
 @media(max-width:460px){
     .top-flex {
@@ -333,26 +331,18 @@ img {
     .phone {
         font-size: 30px;
     }
-    .boxh {
-        width: 420px;
-    }
     .ls .left-title {
         font-size: 35px;
     }
 }
 @media (max-width:370px) {
-    .boxh {
-        width: 350px;
-    }
     .ls {
         width: 100%;
     }
     .lt {
         width: 100%;
     }
-}
-@media (max-width:340px) {
-    .boxh {
-        width: 320px;
+    .ul {
+        justify-content: center;
     }
 }
